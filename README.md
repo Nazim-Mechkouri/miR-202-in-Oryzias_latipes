@@ -60,6 +60,8 @@ To rearrange the tree nodes, I personally used iTOL (https://itol.embl.de/) to a
 This `rearranged_newick_file` is the one that must be given as an input for the following script and will be used to produce a heatmap that matches the new tree shape. 
 
 
+Examples of the "script-produced newick file" for the gene mst1 and the "rearranged mst1 newick file" (via iTOL) are provided (https://github.com/Nazim-Mechkouri/miR-202-in-Teleostei/tree/main/Example_rearranged_newick_file) if needed.
+
 **___________________________________________________________________________________**
 
 
