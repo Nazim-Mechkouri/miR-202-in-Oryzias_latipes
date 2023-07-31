@@ -1,0 +1,32 @@
+The master scripts are in "traitement" folder and are launched from there.
+Candidates are miRNA sequences found in a specie. 
+Orthologous are actually a .txt file on the interaction site of the miRNA with the targeted gene, and all the orthologous sites in all teleostei.
+
+.
+├── candidates
+│   ├── candidates_mst1
+│   ├── candidates_tead3b
+│   └── candidates_vgll4b
+├── orthologous
+│   ├── orthologous_mst1
+│   ├── orthologous_tead3b
+│   └── orthologous_vgll4b
+├── scripts
+│   ├── merge.py
+│   ├── script_Aligner_RNAduplex.sh
+│   ├── script_Dataframe_creator.py
+│   ├── script_filter_dataframe.py
+│   ├── script_finalHeatmap.py
+│   ├── script_for_scripts.py
+│   ├── script_keep_only_duplicate_species.py
+│   ├── script_newick_creator.py
+│   ├── script_pair_candidate_and_orthologous.py
+│   ├── script_pre-treatment.py
+│   ├── script_remove_clade-names.py
+│   └── script_trait.py
+└── traitement
+    ├── final_newick_file_for_vgll4b.nwk
+    ├── final_newick_file_mst1.txt
+    ├── Genomicus_tree_filtered.nwk
+    ├── script_Dataframe_treatment.sh
+    └── script_launcher.sh
