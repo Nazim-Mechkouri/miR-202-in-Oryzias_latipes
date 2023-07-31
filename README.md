@@ -1,4 +1,4 @@
-# miR-202-in-Oryzias_latipes
+# miR-202-in-Teleostei
 
 
 This repository contains a set of Python and shell scripts designed to analyze and predict miR-202's interactions with targets. The scripts aim to process sequence data, create heatmaps, create newick files and sub-trees based on relationships between our species, and visualize the prediction of the interactions between the miRNA and the targeted gene.
