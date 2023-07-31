@@ -100,7 +100,7 @@ Please note that these scripts are specifically designed for miRNA and target in
 ### script_Dataframe_treatment
 
 1. **script_Dataframe_creator.py**:
-- Reads the "merged_RNAduplex" and Newick files to create a dataframe with information for common species. Note that here, the duplicates species do not have an index value yet since "Oryzias_latipes_2" for example is not found in the newick file, yet have to be given the same index as the original Oryzias_latipes.
+- Reads the "merged_RNAduplex" and Newick files to create a dataframe with information for common species. Note that the duplicates species do not have an index value yet (since "Oryzias_latipes_2" for example is not found in the newick file), yet have to be given the same index as the original specie (in this example it would be the index of Oryzias_latipes).
 
 2. **script_filter_dataframe.py**:
 - Filters the dataframe, assigning the same index to species with extensions (_2, _3, etc.) as their original species. Also, creates a file with species names and their corresponding indexes.
