@@ -31,7 +31,7 @@ Or in command lines :
 - pip install argparse 
 
 
-### Usage
+## Usage
 
 The scripts can be executed from the command line. Below are the main commands along with their usage:
 
@@ -47,6 +47,8 @@ Example:
 
 
 This script performs a series of steps, including creating files for each species, executing RNAduplex for each file, and producing a Newick file containing only the species of interest. The Newick file is then used as input for the next script.
+
+**___________________________________________________________________________________**
 
 2. **script_Dataframe_treatment**:
 
