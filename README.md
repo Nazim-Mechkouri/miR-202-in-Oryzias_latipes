@@ -48,7 +48,13 @@ Example:
 
 This script performs a series of steps, including creating files for each species, executing RNAduplex for each file, and producing a Newick file containing only the species of interest. The Newick file is then used as input for the next script.
 
+**Newick_file rearrangement**
+
+The produced newick file contains only the species of interest and is based on the bigger newick_file that you provide. Note that between the two scripts, we need to manually rearrange the nodes of the frenshly created newick_file if we want to rearrange the nodes so that Oryzias latipes would be found at the top of the tre, and lepisosteus occulatus (not a teleosei) and the bottom of the tree (for visualisation purpose). This `rearranged_newick_file` is the one that must be given as an input for the following script and will be used to produce a heatmap that matches the new tree shape. 
+
+
 **___________________________________________________________________________________**
+
 
 2. **script_Dataframe_treatment**:
 
