@@ -37,20 +37,27 @@ The scripts can be executed from the command line. Below are the main commands a
 
 1. **script_launcher**:
 
-./script_launcher GENE_NAME
+./script_launcher.sh `gene_name`
 
 
 Example: 
 
-./script_launcher mst1
+./script_launcher.sh `mst1`
 
 
 
 This script performs a series of steps, including creating files for each species, executing RNAduplex for each file, and producing a Newick file containing only the species of interest. The Newick file is then used as input for the next script.
 
-**Newick_file rearrangement**
+**___________________________________________________________________________________**
 
-The produced newick file contains only the species of interest and is based on the bigger newick_file that you provide. Note that between the two scripts, we need to manually rearrange the nodes of the frenshly created newick_file if we want to rearrange the nodes so that Oryzias latipes would be found at the top of the tre, and lepisosteus occulatus (not a teleosei) and the bottom of the tree (for visualisation purpose). This `rearranged_newick_file` is the one that must be given as an input for the following script and will be used to produce a heatmap that matches the new tree shape. 
+
+***Newick_file rearrangement***
+
+The produced newick file contains only the species of interest and is based on the bigger newick_file that you provide. Note that between the two scripts, we need to manually rearrange the nodes of the freshly created newick_file if we want to alter th shape of the tree so that Oryzias latipes would be found at the top of the tree, and lepisosteus occulatus (not a teleosei) and the bottom of the tree (for visualisation purpose). 
+
+To rearrange the tree nodes, I personally used iTOL (https://itol.embl.de/) to achieve this purpose since the tool provides an option "rotate Children", but other tools can be used. Once done, you can export the rearranged tree in a `rearranged_newick_file`.
+
+This `rearranged_newick_file` is the one that must be given as an input for the following script and will be used to produce a heatmap that matches the new tree shape. 
 
 
 **___________________________________________________________________________________**
@@ -58,12 +65,12 @@ The produced newick file contains only the species of interest and is based on t
 
 2. **script_Dataframe_treatment**:
 
-./script_Dataframe_treatment GENE_NAME FINAL_NEWICK_FILE
+./script_Dataframe_treatment.sh `gene_name`  `rearranged_newick_file`
 
 
 Example:
 
-./script_Dataframe_treatment mst1 final_newick_for_mst.nwk
+./script_Dataframe_treatment.sh `mst1` `final_newick_for_mst.nwk`
 
 
 This script reads the merged_RNAduplex file, crosses the information with the given Newick file, and generates a dataframe containing data for common species. The dataframe is further processed to handle species with multiple miRNA sequences in their genomes (_2, _3, etc.) and create a HEATMAP of the predictions of the miRNA/target interactions.
