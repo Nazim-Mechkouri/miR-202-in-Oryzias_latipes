@@ -1,6 +1,7 @@
 The master scripts are in "traitement" folder and are launched from there.
 Candidates are miRNA sequences found in a specie. 
 Orthologous are actually a .txt file on the interaction site of the miRNA with the targeted gene, and all the orthologous sites in all teleostei.
+in "traitement" file, we need a newick_file (Here its Genomicus for example), and the two bash scripts. We produce via the scripts sub-newick_files that we rearrange as we desire (finale_newick_file...etc.)
 
 .
 ├── candidates
